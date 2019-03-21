@@ -1,0 +1,43 @@
+//base//
+$base-grid: 24px;
+$base-grid-sm: 18px;
+$base-gap: #{$base-grid/3};
+
+
+
+//colors and color schemes//
+$colors: (
+    black: #000,
+    white: #fff,
+    primary: #ef6249,
+    secondary: #250d33,
+    ascent: rgb(90, 46, 43),
+    background: #fafafa,
+);
+
+$color-black: map-get($colors, black );
+$color-black-87: rgba(map-get($colors, black ), .87);
+$color-black-54: rgba(map-get($colors, black ), .54);
+$color-black-38: rgba(map-get($colors, black ), .38);
+$color-black-12: rgba(map-get($colors, black ), .12);
+
+$color-white: map-get($colors, white );
+$color-white-75: rgba(map-get($colors, white ), .75);
+$color-white-54: rgba(map-get($colors, white ), .54);
+$color-white-38: rgba(map-get($colors, white ), .38);
+$color-white-12: rgba(map-get($colors, white ), .12);
+
+$color-primary: map-get($colors, primary);
+$color-secondary: map-get($colors, secondary);
+$color-ascent: map-get($colors, ascent);
+
+$bg-color: map-get($colors, background );
+$divider-color: $color-black-12;
+
+//typography//
+$base-font-family: "Roboto", sans-serif;
+$base-font-size: 14px;
+$base-font-size-sm: 12px;
+$base-font-size-lg: 24px;
+$base-line-height: $base-grid;
+
