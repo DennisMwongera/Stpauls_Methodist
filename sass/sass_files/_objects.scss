@@ -1,0 +1,52 @@
+//header
+.container{
+  top: 0;
+}
+
+//navbar
+.nav{
+  float: right;
+}
+#fh5co-menu-wrap{
+  //width: 200vw!important;
+  top: 0;
+  width: 100%;
+  position: fixed!important;
+  background: $color-secondary;
+  opacity: 0.9;
+  height: 12vh!important;
+  z-index: 999!important;
+  a{
+    color: $color-primary!important;
+  }
+ }
+.navbar-nav{
+  position: absolute!important;
+  float: right;
+  
+
+}
+.sf-menu{
+  float: right;
+  li{
+    font-family: $base-font-family;
+    display: inline-block;
+    padding: $base-grid/4;
+  }
+}
+//navbrand
+  .d-inline-block{
+    a{
+    color: $color-white!important;
+    }
+  }
+  //navbar-toggle
+  .navbar-toggler{
+    margin-left: 300px!important;
+    color: $color-primary!important;
+    border-color: $color-white!important;
+    border-bottom: $color-white!important;
+    position: absolute!important;
+    z-index: 9999!important;
+  }
+

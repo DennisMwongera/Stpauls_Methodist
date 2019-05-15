@@ -1,0 +1,48 @@
+//media breakpoints//
+
+
+//btn//
+@mixin btn() {
+    background-color: rgba($color-primary, .87);
+    color: green!important;
+    font-size: $base-font-size*1.5!important;
+    cursor: pointer;
+    display: inline-flex;
+    border-style: solid $color-primary;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-bottom: $base-grid/4;
+    &:hover{
+        @include btn-hover;
+    }
+}
+
+@mixin btn-hover(){
+        background: rgba($color-secondary, .87);
+    color: $color-primary;
+    border-style: solid rgba($color-secondary, .87);
+    
+}
+
+//media queries
+$phone-width: 480px!important;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone {
+    @media (min-width: #{$phone-width}){
+      @content;
+    }
+  }
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
