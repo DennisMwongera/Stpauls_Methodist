@@ -8,26 +8,38 @@
 
 }
 .nav-header{
-    position: absolute;
-    nav{
-        float: right;
-        ul{
-            display: inline-block;
-            
-        }
+    position: fixed;
+    background: $color-secondary;
+    opacity: 0.9;
+    height: 5vh;
+    width: 100%;
+    z-index: 5;
+    @include desktop{
+        height: auto;
+        .sidebar{
+            background-color: $color-black-54;
+            position: relative;
+            display: none;
+        
+          }
     }
 }
-#fh5co-primary-menu{
-    display: inline-block;
+
+.navbar{
+    position: relative;
+    margin: 0;
+    
+    
 }
 
 //header
 .header_img{
     position: relative;
     width: 100%;
-    background-image: url("/assets/images/img 3.jpg");
     background-position: center;
     background-size: cover;
+    height: auto;
+    top: 0;
     
 }
 
@@ -41,7 +53,7 @@
     @include desktop{
         width: 50%;
         p{
-            font-size: $base-font-size-lg;
+            //font-size: $base-font-size-lg;
         }
     }
     .col-sm{
@@ -60,8 +72,9 @@
         text-align: center!important;
         @include desktop{
             margin: 0 auto;
-            font-size: $base-font-size-lg*1.1;
-            line-height: 1em
+            font-size: $base-font-size*1.2;
+            line-height: 1.5em;
+            font-style: normal;
     }
     }
 }
@@ -76,7 +89,7 @@
 //container gallery
 .container__gallery{
     margin: 0 auto;
-    padding: $base-grid;
+    padding: $base-grid*2;
     display: inline-block;
 
    
@@ -88,7 +101,7 @@
         font-size: $base-font-size-lg;
     }
     h3{
-        padding: $base-grid;
+        padding: $base-grid*2;
         text-align: center;
         font-style: normal;
         font-weight: 300;
@@ -101,7 +114,9 @@
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-gap: $base-grid;
-       h3{ font-size: $base-font-size-lg;
+       h3{
+            font-size: $base-font-size*1.2;
+            font-weight: 350;
        }
 }
 }
@@ -159,6 +174,20 @@ border: transparent!important;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-gap: $base-grid;
+        a{
+            font-size: $base-font-size;
+            padding: $base-grid/8;
+            text-align: center;
+        }
+        p{
+            font-size: $base-font-size;
+            padding: $base-grid/8;
+        }
+        h3{
+            font-size: $base-font-size;
+            padding: $base-grid/8;
+            text-align: center;
+        }
     }
    }
 

@@ -27,10 +27,10 @@
 
           <div id="header__section">
 			<header id="header">
-				<div class="col container__header">
+				<div class="container container__header">
 					<div class="nav-header">
-						<!-- <a href="#" onclick="myFunction()" class="js-fh5co-nav-toggle fh5co-nav-toggle navbar-toggler"><i></i></a> -->
-						 <nav  class="sidebar" id="fh5co-menu-wrap" role="navigation">
+						<!-- <a href="#" onclick="myFunction()" class="js-fh5co-nav-toggle fh5co-nav-toggle navbar-toggler"><i></i></a> 
+						<nav  class="nav" id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu navbar-nav" id="fh5co-primary-menu">
 								<li>
 									<a href="index.html">Home</a>
@@ -45,20 +45,20 @@
 										<li><a href="../ministry/ministry.html" target="_blank">Golden Age</a></li>
 										<li><a href="../ministry/ministry.html" target="_blank">St.Pauls'Choir</a></li>
 									</ul>
-								</li>
-								 <li>
+								</li> -->
+								<!-- <li>
 									<a href="../sermons.php" class="fh5co-sub-ddown">Sermons</a></li>
 								<li><a href="../About_Us/aboutus.php">About</a></li>
 								<li><a href="../blog/blogpage.php">Blog</a></li>
 								<li><a href="../Talktous/form.html">Contact</a></li>
 							</ul>
-						</nav> 
+						</nav> -->
 
 
 						 <nav class="navbar navbar-expand-lg navbar-light ">
-							<a class="navbar-brand" href="#" onclick="myFunction()">
-								<img src="assets/images/mcklogo.png" width="30" height="30" class="d-inline-block align-top" alt=""><h1>
-								<span>ST.Paul's Church</span>
+							<a class="navbar-brand" href="#">
+								<img src="assets/images/mcklogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+								ST.Paul's Church
 							  </a>
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							  <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
 								  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Ministries
 								  </a>
-								  <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 									<a class="dropdown-item" href="#">Men Fellowship</a>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#">Women Fellowship</a>
@@ -88,7 +88,7 @@
 									<a class="dropdown-item" href="#">St.Paul's Choir</a>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#">St.Paul Academy</a>
-								  </div> -->
+								  </div>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="../blog/blogpage.php">Our Blog</a>
@@ -101,7 +101,7 @@
 								  </li>
 								</ul>
 							</div>
-						  </nav>
+						  </nav> --> -->
 						<!-- END nav -->
 					</div>
 				</div>
@@ -110,9 +110,9 @@
     
 
 	<div id="wrap">
-			<div class="header_img">
+			<!-- <div class="header_img">
 				<img src="assets/images/img 3.jpg" class="img-fluid" alt="Responsive image">
-			</div>
+			</div> -->
 	</div>
 	<div class="row">
 		

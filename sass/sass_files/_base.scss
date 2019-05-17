@@ -29,7 +29,7 @@ h6{ font-size:$base-font-size-sm;}
 
 
 a {
-  color: $color-black-54;
+  color: $color-white;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -37,8 +37,8 @@ a {
     font-size: $base-font-size*1.2;
 }
 a:hover {
-  text-decoration: none !important;
-  color: $color-secondary !important;
+  text-decoration: none;
+  color: $color-primary;
 }
 
 ul, ol {
@@ -71,5 +71,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 span{
-    padding: $base-grid;
+    padding: $base-grid*3;
 }

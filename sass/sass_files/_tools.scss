@@ -17,15 +17,12 @@
     }
 }
 
-@mixin btn-hover(){
-        background: rgba($color-secondary, .87);
-    color: $color-primary;
-    border-style: solid rgba($color-secondary, .87);
-    
-}
+@mixin hover {
+  &:hover { @content }
+};
 
 //media queries
-$phone-width: 480px!important;
+$phone-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
