@@ -1,0 +1,125 @@
+//header
+.container__header{
+  top: 0;
+}
+
+//navbar
+.nav{
+  display: inline;
+  @include desktop{
+    .side-bar{
+      background-color: $color-black-54;
+      position: relative;
+      display: none;
+  
+    }
+  }
+  ul{
+    float: right;
+  }
+  li{
+    font-family: $base-font-family;
+    display: none;
+    padding: $base-grid/4;
+    
+  }
+  a{
+    color: $color-white;
+  }
+ }
+.navbar-nav{
+  z-index: 5;
+  position: relative;
+  float: right;
+  display: none;
+  @include desktop{
+    overflow: show;
+    float: right;
+    top: 0;
+    li{
+      display: inline;
+    }
+    
+  }
+  @include tablet{
+    .navbar-nav{
+      height: 5vh;
+    }
+    li{
+      display: inline;
+    }
+    .navbar-toggler{
+      display: none;
+    }
+  }
+  .navbar-brand{
+    position: relative;
+    display: inline;
+    padding: $base-grid;
+    margin-left: $base-grid;
+    margin-right: $base-grid;
+    a{
+      font-size: $base-font-size-lg*2;
+      @include hover{
+        color: $color-white;
+      }
+    }
+  }
+  a{
+    color: $color-white-54;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    padding: $base-grid/3;
+    &:hover{
+      color: $color-primary;
+    }
+  }
+  }
+
+//navbrand
+  .d-inline-block{
+    margin: 0 auto;
+    a{
+    color: $color-white;
+    padding: $base-grid;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-area: "img span"
+    }
+    img{
+      grid-area: img;
+      padding: $base-grid;
+    }
+    span{
+      grid-area: span;
+    }
+  }
+  //navbar-toggle
+  // .navbar-toggler{
+  //   margin-left: 300px!important;
+  //   color: $color-primary!important;
+  //   border-color: $color-white!important;
+  //   border-bottom: $color-white!important;
+
+  // }
+  .navbar-toggler {
+    color: $color-white;
+    border-color: $color-white;
+    height: $base-grid*2.1;
+    width: $base-grid*2.1;
+    position: relative;
+    z-index: 3;
+    float: right;
+    margin-right: $base-grid;
+    bottom: $base-grid;
+    background-color: aqua;
+
+    
+    @include desktop{
+      display: none;
+    }
+  }
+  .navbar-toggler-icon{
+
+  }
+

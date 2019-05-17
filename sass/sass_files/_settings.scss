@@ -12,7 +12,7 @@ $colors: (
     primary: #ef6249,
     secondary: #250d33,
     ascent: rgb(90, 46, 43),
-    background: #fafafa,
+    background-color: #fafafa,
 );
 
 $color-black: map-get($colors, black );
@@ -31,7 +31,7 @@ $color-primary: map-get($colors, primary);
 $color-secondary: map-get($colors, secondary);
 $color-ascent: map-get($colors, ascent);
 
-$bg-color: map-get($colors, background );
+$bg-color: map-get($colors, background-color);
 $divider-color: $color-black-12;
 
 //typography//
@@ -40,4 +40,6 @@ $base-font-size: 14px;
 $base-font-size-sm: 12px;
 $base-font-size-lg: 24px;
 $base-line-height: $base-grid;
+
+
 

@@ -16,11 +16,60 @@ body{font-family: $base-font-family;
     font-weight: 400;
 	-webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale; 
-    word-wrap: break-word; 
+    word-wrap: break-word;
 	 }
+
 h1{ font-size: $base-font-size-lg; }
 h2{ font-size: $base-font-size-lg;}
 h3{ font-size:$base-font-size;}
 h4{ font-size:$base-font-size;}
 h5{ font-size:$base-font-size-sm;}
 h6{ font-size:$base-font-size-sm;}
+
+
+
+a {
+  color: $color-white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+    text-decoration: none;
+    font-size: $base-font-size*1.2;
+}
+a:hover {
+  text-decoration: none;
+  color: $color-primary;
+}
+
+ul, ol {
+  margin: 1.5em;
+  font-size: $base-font-size;
+  color: $color-black-54;
+  font-family: $base-font-family;
+    display: inline;
+
+li{
+     font-size: $base-font-size;
+  color: $color-black-54;
+  font-family: $base-font-family;
+    list-style: none;
+    padding: $base-grid/2;
+}
+
+p{
+  font-size: $base-font-size;
+  color: $color-black-54;
+  font-family: $base-font-family;
+    margin: $base-grid $base-grid*1.2 $base-grid*1.2 $base-grid*1.2!important;
+      
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-black;
+  font-family: $base-font-family;
+}
+
+span{
+    padding: $base-grid*3;
+}
