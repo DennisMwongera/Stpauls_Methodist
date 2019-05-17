@@ -554,14 +554,24 @@ span {
     display: none;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 27, ../sass/sass_files/_components.scss */
+  .nav-header .nav-header {
+    height: 5vh;
+  }
+  /* line 30, ../sass/sass_files/_components.scss */
+  .nav-header .sidebar {
+    display: none;
+  }
+}
 
-/* line 28, ../sass/sass_files/_components.scss */
+/* line 36, ../sass/sass_files/_components.scss */
 .navbar {
   position: relative;
   margin: 0;
 }
 
-/* line 36, ../sass/sass_files/_components.scss */
+/* line 44, ../sass/sass_files/_components.scss */
 .header_img {
   position: relative;
   width: 100%;
@@ -571,7 +581,7 @@ span {
   top: 0;
 }
 
-/* line 47, ../sass/sass_files/_components.scss */
+/* line 55, ../sass/sass_files/_components.scss */
 .ministry__content {
   padding: 50px;
   margin: 0 auto;
@@ -579,28 +589,28 @@ span {
   width: 100%;
 }
 @media (min-width: 1024px) {
-  /* line 47, ../sass/sass_files/_components.scss */
+  /* line 55, ../sass/sass_files/_components.scss */
   .ministry__content {
     width: 50%;
   }
 }
-/* line 60, ../sass/sass_files/_components.scss */
+/* line 68, ../sass/sass_files/_components.scss */
 .ministry__content .col-sm img {
   padding: 24px;
 }
-/* line 65, ../sass/sass_files/_components.scss */
+/* line 73, ../sass/sass_files/_components.scss */
 .ministry__content h2 {
   padding: 12px;
   text-align: center !important;
   font-style: normal !important;
   font-weight: 350 !important;
 }
-/* line 71, ../sass/sass_files/_components.scss */
+/* line 79, ../sass/sass_files/_components.scss */
 .ministry__content p {
   text-align: center !important;
 }
 @media (min-width: 1024px) {
-  /* line 71, ../sass/sass_files/_components.scss */
+  /* line 79, ../sass/sass_files/_components.scss */
   .ministry__content p {
     margin: 0 auto;
     font-size: 16.8px;
@@ -609,19 +619,19 @@ span {
   }
 }
 
-/* line 83, ../sass/sass_files/_components.scss */
+/* line 91, ../sass/sass_files/_components.scss */
 .row__activities {
   margin: 0 auto;
   display: block;
 }
 
-/* line 90, ../sass/sass_files/_components.scss */
+/* line 98, ../sass/sass_files/_components.scss */
 .container__gallery {
   margin: 0 auto;
   padding: 48px;
   display: inline-block;
 }
-/* line 96, ../sass/sass_files/_components.scss */
+/* line 104, ../sass/sass_files/_components.scss */
 .container__gallery h2 {
   padding: 28.8px;
   text-align: center;
@@ -629,7 +639,7 @@ span {
   font-weight: 350;
   font-size: 24px;
 }
-/* line 103, ../sass/sass_files/_components.scss */
+/* line 111, ../sass/sass_files/_components.scss */
 .container__gallery h3 {
   padding: 48px;
   text-align: center;
@@ -639,27 +649,27 @@ span {
 }
 
 @media (min-width: 1024px) {
-  /* line 112, ../sass/sass_files/_components.scss */
+  /* line 120, ../sass/sass_files/_components.scss */
   .row__gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
   }
-  /* line 117, ../sass/sass_files/_components.scss */
+  /* line 125, ../sass/sass_files/_components.scss */
   .row__gallery h3 {
     font-size: 16.8px;
     font-weight: 350;
   }
 }
 
-/* line 125, ../sass/sass_files/_components.scss */
+/* line 133, ../sass/sass_files/_components.scss */
 .join_btn {
   position: absolute;
   left: 50% !important;
   margin-left: -30px !important;
 }
 
-/* line 131, ../sass/sass_files/_components.scss */
+/* line 139, ../sass/sass_files/_components.scss */
 .btn-primary__join {
   padding: 6.85714px !important;
   margin: 0 auto !important;
@@ -668,22 +678,22 @@ span {
   border: transparent !important;
 }
 
-/* line 138, ../sass/sass_files/_components.scss */
+/* line 146, ../sass/sass_files/_components.scss */
 .btn-primary__join:hover {
   color: #250d33 !important;
 }
 
-/* line 142, ../sass/sass_files/_components.scss */
+/* line 150, ../sass/sass_files/_components.scss */
 #footer {
   display: block;
   padding: 48px;
   background-color: rgba(0, 0, 0, 0.87);
 }
-/* line 146, ../sass/sass_files/_components.scss */
+/* line 154, ../sass/sass_files/_components.scss */
 #footer ul {
   display: inline-block !important;
 }
-/* line 149, ../sass/sass_files/_components.scss */
+/* line 157, ../sass/sass_files/_components.scss */
 #footer a {
   color: rgba(255, 255, 255, 0.54) !important;
   font-size: 18.2px;
@@ -691,7 +701,7 @@ span {
   padding: 8px;
   text-align: center !important;
 }
-/* line 156, ../sass/sass_files/_components.scss */
+/* line 164, ../sass/sass_files/_components.scss */
 #footer h3 {
   font-style: bold;
   font-weight: 300;
@@ -699,31 +709,31 @@ span {
   color: #ef6249;
   padding: 24px;
 }
-/* line 164, ../sass/sass_files/_components.scss */
+/* line 172, ../sass/sass_files/_components.scss */
 #footer p {
   padding-top: 24px;
   color: rgba(255, 255, 255, 0.54) !important;
   font-size: 16.8px;
 }
 @media (min-width: 1024px) {
-  /* line 172, ../sass/sass_files/_components.scss */
+  /* line 180, ../sass/sass_files/_components.scss */
   #footer .row__footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
   }
-  /* line 177, ../sass/sass_files/_components.scss */
+  /* line 185, ../sass/sass_files/_components.scss */
   #footer .row__footer a {
     font-size: 14px;
     padding: 3px;
     text-align: center;
   }
-  /* line 182, ../sass/sass_files/_components.scss */
+  /* line 190, ../sass/sass_files/_components.scss */
   #footer .row__footer p {
     font-size: 14px;
     padding: 3px;
   }
-  /* line 186, ../sass/sass_files/_components.scss */
+  /* line 194, ../sass/sass_files/_components.scss */
   #footer .row__footer h3 {
     font-size: 14px;
     padding: 3px;
@@ -731,17 +741,17 @@ span {
   }
 }
 
-/* line 195, ../sass/sass_files/_components.scss */
+/* line 203, ../sass/sass_files/_components.scss */
 .footer-nav {
   text-align: center;
 }
 
-/* line 198, ../sass/sass_files/_components.scss */
+/* line 206, ../sass/sass_files/_components.scss */
 .float {
   padding: 0 !important;
 }
 
-/* line 201, ../sass/sass_files/_components.scss */
+/* line 209, ../sass/sass_files/_components.scss */
 .fh5co-copyright {
   text-align: center;
   font-size: 16.8px;

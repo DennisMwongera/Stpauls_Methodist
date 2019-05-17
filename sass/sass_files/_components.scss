@@ -23,6 +23,14 @@
         
           }
     }
+    @include tablet{
+        .nav-header{
+            height: 5vh;
+        }
+        .sidebar{
+            display: none;
+        }
+    }
 }
 
 .navbar{
