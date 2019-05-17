@@ -1,0 +1,225 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  [class*="col-"] .col-1 {
+    width: 8.33%;
+  }
+  [class*="col-"] .col-2 {
+    width: 16.66%;
+  }
+  [class*="col-"] .col-3 {
+    width: 25%;
+  }
+  [class*="col-"] .col-4 {
+    width: 33.33%;
+  }
+  [class*="col-"] .col-5 {
+    width: 41.66%;
+  }
+  [class*="col-"] .col-6 {
+    width: 50%;
+  }
+  [class*="col-"] .col-7 {
+    width: 58.33%;
+  }
+  [class*="col-"] .col-8 {
+    width: 66.66%;
+  }
+  [class*="col-"] .col-9 {
+    width: 75%;
+  }
+  [class*="col-"] .col-10 {
+    width: 83.33%;
+  }
+  [class*="col-"] .col-11 {
+    width: 91.66%;
+  }
+  [class*="col-"] .col-12 {
+    width: 100%;
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  margin: 0;
+}
+
+body #bg {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 75% 0, 55% 100%, 0 100%);
+            clip-path: polygon(0 0, 75% 0, 55% 100%, 0 100%);
+  }
+}
+
+body .navbar {
+  background-color: #250d33;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  z-index: -1;
+  opacity: 0.9;
+  color: #fff;
+}
+
+body .navbar h1 a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body .navbar h1 a {
+    text-align: left;
+    padding: 0px;
+    position: relative;
+    z-index: 2;
+    float: left;
+  }
+}
+
+body .navbar h1 a .navbar img {
+  z-index: -2;
+}
+
+.menu {
+  float: right;
+  line-height: 100px;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    text-align: right;
+  }
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.show-menu-btn, .hide-menu-btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .show-menu-btn, .hide-menu-btn {
+    visibility: hidden;
+  }
+}
+
+.show-menu-btn i {
+  line-height: 100px;
+}
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+  color: #3498db;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.show-menu-btn {
+  display: block;
+  float: right;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  right: -100%;
+  top: 0;
+  text-align: center;
+  padding: 80px 0;
+  line-height: normal;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  list-style-type: none;
+  z-index: 999 !important;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    text-align: right;
+    right: 0;
+    list-style: none;
+    text-align: right;
+    position: absolute;
+    height: 8vh;
+    list-style: none;
+    padding: 0;
+    background: #250d33;
+  }
+}
+
+.menu a {
+  display: block;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .menu a {
+    display: inline-block;
+    font-style: none;
+  }
+}
+
+.hide-menu-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+#chk:checked ~ .menu {
+  right: 0;
+}
+
+#chk:checked ~ .maybe {
+  display: none;
+}
+
+#maybe {
+  width: 50%;
+}
+/*# sourceMappingURL=sermons.css.map */
