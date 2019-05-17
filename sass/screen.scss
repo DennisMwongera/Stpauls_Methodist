@@ -3,13 +3,44 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
-@import "sass_files/settings";
-@import "sass_files/tools";
-@import "sass_files/generic";
-@import "sass_files/base";
-@import "sass_files/elements";
-@import "sass_files/objects";
-@import "sass_files/components";
-//@import "sass_files/pages";
-@import "sass_files/utilities";
+// @import "compass/reset";
+// @import "sass_files/settings";
+// @import "sass_files/tools";
+// @import "sass_files/generic";
+// @import "sass_files/base";
+// @import "sass_files/elements";
+// @import "sass_files/objects";
+// @import "sass_files/components";
+// //@import "sass_files/pages";
+// @import "sass_files/utilities";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+}
+#sidebar ul li{
+    color: rgba(230,230,230,0.9);
+    list-style-type: none;
+    padding: 15px 10px;
+    border: 1px solid rgba(100,100,100,0.3);
+}
+#sidebar .togglebtn{
+    position: absolute;
+    left: 230;
+    top: 20px;
+}
+#sidebar .togglebtn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px;
+}
