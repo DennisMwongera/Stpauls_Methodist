@@ -399,30 +399,22 @@ span {
 .nav {
   display: inline;
 }
-@media (min-width: 1024px) {
-  /* line 10, ../sass/sass_files/_objects.scss */
-  .nav .side-bar {
-    background-color: rgba(0, 0, 0, 0.54);
-    position: relative;
-    display: none;
-  }
-}
-/* line 17, ../sass/sass_files/_objects.scss */
+/* line 9, ../sass/sass_files/_objects.scss */
 .nav ul {
   float: right;
 }
-/* line 20, ../sass/sass_files/_objects.scss */
+/* line 12, ../sass/sass_files/_objects.scss */
 .nav li {
   font-family: "Roboto", sans-serif;
   display: none;
   padding: 6px;
 }
-/* line 26, ../sass/sass_files/_objects.scss */
+/* line 18, ../sass/sass_files/_objects.scss */
 .nav a {
   color: #fff;
 }
 
-/* line 30, ../sass/sass_files/_objects.scss */
+/* line 22, ../sass/sass_files/_objects.scss */
 .navbar-nav {
   z-index: 5;
   position: relative;
@@ -430,32 +422,32 @@ span {
   display: none;
 }
 @media (min-width: 1024px) {
-  /* line 30, ../sass/sass_files/_objects.scss */
+  /* line 22, ../sass/sass_files/_objects.scss */
   .navbar-nav {
     overflow: show;
     float: right;
     top: 0;
   }
-  /* line 39, ../sass/sass_files/_objects.scss */
+  /* line 31, ../sass/sass_files/_objects.scss */
   .navbar-nav li {
     display: inline;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 45, ../sass/sass_files/_objects.scss */
+  /* line 37, ../sass/sass_files/_objects.scss */
   .navbar-nav .navbar-nav {
     height: 5vh;
   }
-  /* line 48, ../sass/sass_files/_objects.scss */
+  /* line 40, ../sass/sass_files/_objects.scss */
   .navbar-nav li {
     display: inline;
   }
-  /* line 51, ../sass/sass_files/_objects.scss */
+  /* line 43, ../sass/sass_files/_objects.scss */
   .navbar-nav .navbar-toggler {
     display: none;
   }
 }
-/* line 55, ../sass/sass_files/_objects.scss */
+/* line 47, ../sass/sass_files/_objects.scss */
 .navbar-nav .navbar-brand {
   position: relative;
   display: inline;
@@ -463,7 +455,7 @@ span {
   margin-left: 24px;
   margin-right: 24px;
 }
-/* line 61, ../sass/sass_files/_objects.scss */
+/* line 53, ../sass/sass_files/_objects.scss */
 .navbar-nav .navbar-brand a {
   font-size: 48px;
 }
@@ -471,23 +463,23 @@ span {
 .navbar-nav .navbar-brand a:hover {
   color: #fff;
 }
-/* line 68, ../sass/sass_files/_objects.scss */
+/* line 60, ../sass/sass_files/_objects.scss */
 .navbar-nav a {
   color: rgba(255, 255, 255, 0.54);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding: 8px;
 }
-/* line 73, ../sass/sass_files/_objects.scss */
+/* line 65, ../sass/sass_files/_objects.scss */
 .navbar-nav a:hover {
   color: #ef6249;
 }
 
-/* line 80, ../sass/sass_files/_objects.scss */
+/* line 72, ../sass/sass_files/_objects.scss */
 .d-inline-block {
   margin: 0 auto;
 }
-/* line 82, ../sass/sass_files/_objects.scss */
+/* line 74, ../sass/sass_files/_objects.scss */
 .d-inline-block a {
   color: #fff;
   padding: 24px;
@@ -495,17 +487,17 @@ span {
   grid-template-columns: auto auto;
   grid-area: "img span";
 }
-/* line 89, ../sass/sass_files/_objects.scss */
+/* line 81, ../sass/sass_files/_objects.scss */
 .d-inline-block img {
   grid-area: img;
   padding: 24px;
 }
-/* line 93, ../sass/sass_files/_objects.scss */
+/* line 85, ../sass/sass_files/_objects.scss */
 .d-inline-block span {
   grid-area: span;
 }
 
-/* line 105, ../sass/sass_files/_objects.scss */
+/* line 97, ../sass/sass_files/_objects.scss */
 .navbar-toggler {
   color: #fff;
   border-color: #fff;
@@ -516,10 +508,9 @@ span {
   float: right;
   margin-right: 24px;
   bottom: 24px;
-  background-color: aqua;
 }
 @media (min-width: 1024px) {
-  /* line 105, ../sass/sass_files/_objects.scss */
+  /* line 97, ../sass/sass_files/_objects.scss */
   .navbar-toggler {
     display: none;
   }

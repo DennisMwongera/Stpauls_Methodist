@@ -1,0 +1,50 @@
+/* line 1, ../../../sass/sass_files/css/see.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+/* line 6, ../../../sass/sass_files/css/see.scss */
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #151719;
+  left: -200px;
+  transition: all 500ms linear;
+}
+
+/* line 14, ../../../sass/sass_files/css/see.scss */
+#sidebar.active {
+  left: 0px;
+}
+
+/* line 17, ../../../sass/sass_files/css/see.scss */
+#sidebar ul li {
+  color: rgba(230, 230, 230, 0.9);
+  list-style-type: none;
+  padding: 15px 10px;
+  border: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+/* line 23, ../../../sass/sass_files/css/see.scss */
+#sidebar .togglebtn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+}
+
+/* line 28, ../../../sass/sass_files/css/see.scss */
+#sidebar .togglebtn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #151719;
+  margin: 5px 0px;
+}
+
+/* line 35, ../../../sass/sass_files/css/see.scss */
+.main {
+  margin-top: 100px;
+}
