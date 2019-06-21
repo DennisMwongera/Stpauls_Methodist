@@ -6,10 +6,13 @@
 	<title>Ministries</title>
 	<!--main css------>
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/superfish.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<!--fonts/icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<!-- Animate.css -->
     <link rel="stylesheet" href="stylesheets/css_/animate.css">
     <!-- Icomoon Icon Fonts-->
@@ -28,98 +31,62 @@
 
           <div id="header__section">
 			<header id="header">
-				<div class="col container__header">
+				<div class="container__header">
 					<div class="nav-header">
-						<!-- <a href="#" onclick="myFunction()" class="js-fh5co-nav-toggle fh5co-nav-toggle navbar-toggler"><i></i></a> -->
-						 <nav  class="sidebar" id="fh5co-menu-wrap" role="navigation">
-							<ul class="sf-menu navbar-nav" id="fh5co-primary-menu">
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-								 <li class="active">
-									<a href="../ministries.php" class="fh5co-sub-ddown ">Ministries</a>
-									<ul class="fh5co-sub-menu mega_menu">
-										<li><a href="../ministries.php" target="_blank">Men Fellowship</a></li>
-										<li><a href="../ministries.php" target="_blank">Women Fellowship</a></li>
-										<li><a href="http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap" target="_blank">Youth Group</a></li>
-										<li><a href="../ministry/ministry.html" target="_blank">Junior Church Ministry</a></li>
-										<li><a href="../ministry/ministry.html" target="_blank">Golden Age</a></li>
-										<li><a href="../ministry/ministry.html" target="_blank">St.Pauls'Choir</a></li>
-									</ul>
-								</li>
-								 <li>
-									<a href="../sermons.php" class="fh5co-sub-ddown">Sermons</a></li>
-								<li><a href="../About_Us/aboutus.php">About</a></li>
-								<li><a href="../blog/blogpage.php">Blog</a></li>
-								<li><a href="../Talktous/form.html">Contact</a></li>
-							</ul>
-						</nav> 
-
-
-						 <nav class="navbar navbar-expand-lg navbar-light ">
-							<a class="navbar-brand" href="#" onclick="myFunction()">
-								<img src="assets/images/mcklogo.png" width="30" height="30" class="d-inline-block align-top" alt=""><h1>
-								<span>ST.Paul's Church</span>
-							  </a>
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							  <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-							</button>
-						  
-							<div class=" nav collapse navbar-collapse" id="navbarSupportedContent">
-							  <ul class="navbar-nav mr-auto">
-								<li class="nav-item">
-								  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-								  <a class="nav-link" href="../sermons.php">Sermons</a>
-								</li>
-								<li class="nav-item dropdown active">
-								  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Ministries
-								  </a>
-								  <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Men Fellowship</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Women Fellowship</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Youth Ministry</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Junior Church Ministry</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">St.Paul's Choir</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">St.Paul Academy</a>
-								  </div> -->
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="../blog/blogpage.php">Our Blog</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="../About_Us/aboutus.php">About Church</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="../Talktous/form.html">Contact Us</a>
-								  </li>
-								</ul>
-							</div>
-						  </nav>
+						<!---START nav-->
+						<div id="fh5co-header">
+							<header id="fh5co-header-section">
+								<div class="container__head">
+									<div class="nav-header">
+										<a href="#" class="nav-toggle" onclick="openSlideMenu()"><i class="fas fa-align-justify"></i></a>
+										<div class="site-logo"><h1><a href="index.html">ST.Paul's</a></h1></div>
+										<!-- START #fh5co-menu-wrap -->
+										<nav id="fh5co-menu-wrap" role="navigation">
+												<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+											<ul class="sf-menu SlideMenu" id="fh5co-primary-menu">
+												<li class="active">
+													<a href="index.html">Home</a>
+												</li>
+												<li>
+													<a href="../ministries.php" class="fh5co-sub-ddown">Ministries</a>
+													<ul class="fh5co-sub-menu mega_menu">
+														<li><a href="../ministries.php" target="_blank">Men Fellowship</a></li>
+														<li><a href="../ministries.php" target="_blank">Women Fellowship</a></li>
+														<li><a href="http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap" target="_blank">Youth Group</a></li>
+														<li><a href="../ministry/ministry.html" target="_blank">Junior Church Ministry</a></li>
+														<li><a href="../ministry/ministry.html" target="_blank">Golden Age</a></li>
+														<li><a href="../ministry/ministry.html" target="_blank">St.Pauls'Choir</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="../sermons.php" class="fh5co-sub-ddown">Sermons</a></li>
+												<li><a href="../About_Us/aboutus.php">About</a></li>
+												<li><a href="http://localhost/stpaul_blog/">Blog</a></li>
+												<li><a href="../Talktous/form.html">Contact</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</header>
 						<!-- END nav -->
 					</div>
 				</div>
 			</header>
 		</div>
     
-
-	<div id="wrap">
-			<div class="header_img">
-				<img src="assets/images/img 3.jpg" class="img-fluid" alt="Responsive image">
+ <div id="col-xs-12">
+			<div class="img-head">
+					
+				<img src="assets/images/women fellowship.jpg" style="width: 100%;">
+				<!-- <h1 class="title">WOMEN FELLOWSHIP</h1> -->
 			</div>
-	</div>
-	<div class="row">
-		
-		<div class="col">
+		</div> 
+	
+	
+	<div class="row-ministry">
+		<div class="ministry-meta">
 			<div class="ministry__content">
-          <h2>WOMEN FELLOWSHIP</h2>
+          <h2>Women Fellowship</h2>
 				<p>
 					Women contribute a lot in peacemaking and conflict resolution processes. They are becoming more and more involved in small, 
 					medium and big enterprises that bring incomes to the households. In every society, women are acknowledged as the real social agents.
@@ -162,28 +129,67 @@
 </div>
 </div>
 <!--------START Gallery-->
-<div class="container container__gallery">
+<div class="container_section container__gallery">
 		<h2>Gallery</h2>
-	<div class="row row__gallery">
+	<div class="row_section row__gallery">
 	  <div class="col-sm">
-		<img src="assets/images/img 2.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
-		<h3>Women Rally</h3>
+		<a href="http://localhost/stpaul_blog/womenfellowship/"><img src="assets/images/women/image-1.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+			<h3>Outing</h3></a>
 	  </div>
 	  <div class="col-sm">
-		<img src="assets/images/img 2.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
-		<h3>Children Home visit</h3>
+		<a href="http://localhost/stpaul_blog/womenfellowship/"><img src="assets/images/women/image-2.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+			<h3>Outing</h3></a>
 	  </div>
 	  <div class="col-sm">
-		<img src="assets/images/img 2.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
-		<h3>Mombasa Trip</h3>
+		<a href="http://localhost/stpaul_blog/womenfellowship/"><img src="assets/images/women/image-3.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+			<h3>Outing</h3></a>
 	  </div>
 	  <div class="col-sm">
-		<img src="assets/images/img 4.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
-		<h3>Women's Football Match</h3>
+		<a href="http://localhost/stpaul_blog/womenfellowship/"><img src="assets/images/women/image-4.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+			<h3>Outing</h3></a>
 	  </div>
 	</div>
-  </div>
-<!--------START Gallery-->
+	</div>
+
+	 <div id="myModal" class="modal">
+		 <span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1/4</div>
+				<img src="assets/images/img 2.jpg" style="width: 100%">
+			</div>
+
+			<div class="mySlides">
+					<div class="numbertext">1/4</div>
+					<img src="assets/images/img 2.jpg" style="width: 100%">
+				</div>
+
+				<div class="mySlides">
+						<div class="numbertext">2/4</div>
+						<img src="assets/images/img 2.jpg" style="width: 100%">
+					</div>
+
+					<div class="mySlides">
+							<div class="numbertext">3/4</div>
+							<img src="assets/images/img 2.jpg" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+								<div class="numbertext">4/4</div>
+								<img src="assets/images/img 2.jpg" style="width: 100%">
+						</div>
+
+		</div>
+	 </div>
+
+	   <!-- Next/previous controls -->
+		 <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		 <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+	
+	
+
+<!--------END Gallery-->
 	
 	<!---------START join us------------->   
 	<div class="join_btn">  
@@ -196,10 +202,9 @@
    <!---------Footer------------->   
     	<footer>
 			<div id="footer">
-				<div class="container footer_container">
-					<div class="row row__footer">
-						<div class="col-md-3 ">
-<!--							<h3>About Us</h3>-->
+				<div class="container__footer footer_container">
+					<div class=" row__footer">
+						<div class="col-directions ">
 					<div class="directions">
 	        		<h3>MCK St.Paul's Church</h3>
 	        		<p>Meru - Nanyuki Highway</p>
@@ -207,18 +212,18 @@
 	        		<p>Meru County Offices</p>
 	        	</div>
 						</div>
-						<div class="col-md-4 ">
-                            	<ul class="float">
-								<li><a href="#">HIV/AIDS Support Group </a></li>
+						<div class="col-programmes ">
+                            	<ul class="programes">
+							<li><a href="#">HIV/AIDS Support Group </a></li>
 								<li><a href="#">Christian Social Responsibility</a></li>
 								<li><a href="#">Mission and Evangelism</a></li>
 								<li><a href="#">Bible Study</a></li>
 								<li><a href="#">Social day</a></li>
 							</ul>
 						</div>
-                        <div class="col-md-3 ">
+                        <div class="col-ministries ">
                             	<h3>Our Ministries</h3>
-							<ul class="float">
+							<ul class="min__list">
 								<li><a href="#">Men Fellowship</a></li>
 								<li><a href="#">Women Fellowship </a></li>
 								<li><a href="#">Youth Ministry</a></li>
@@ -227,7 +232,7 @@
 							</ul>
                         </div>
 
-						<div class="col-md-2">
+						<div class="col-media">
 							<h3>Follow Us</h3>
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-twitter2"></i> Twitter</a></li>
@@ -245,18 +250,17 @@
 				</div>
 			</div>
 		</footer>
-	</div>
-
+</div>
 <!-- jQuery -->
   <script>
-	function myFunction(){
-			//document.getElementById("side-menu").style.width = "350px";
-        
-            document.getElementByClassName("side-bar").style.opacity =("0");
-            document.getElementById("main").style.marginRight = "300px";
-			document.getElementById("side-menu").style.height = "100%";
+	function openSlideMenu(){
+			document.getElementById("fh5co-primary-menu").style.marginRight = "350px";
+			document.getElementById("fh5co-primary-menu").style.color = "#222";
+            //document.getElementByClassName("side-bar").style.opacity =("0");
+            document.getElementById("main").style.marginRight = "200px";
+			//document.getElementById("side-menu").style.height = "100%";
 
-			document.getElementById("side-menu").style.background= '#222';
+			document.getElementById("fh5co-menu-wrap").style.background= '#000';
 		}
       
       	function closeSlideMenu(){
@@ -266,6 +270,12 @@
 
 		}
 </script>
+
+
+
+		<script>
+
+		</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

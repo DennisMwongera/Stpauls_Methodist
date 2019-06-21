@@ -3,13 +3,16 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	
 }
 .sf-menu li {
 	position: relative;
+	margin-right: 24px;
+	font-size: 18px!important;
 }
 .sf-menu ul {
 	position: absolute;
-/*	ssdisplay: none;*/
+/*	display: none;*/
 	top: 100%;
 	right: 0;
 	
@@ -52,7 +55,7 @@
 	zoom: 1; /* IE7 */
 }
 .sf-menu a {
-	color: #13a;
+	color: white;
 }
 .sf-menu li {
 	background: #BDD2FF;

@@ -1,5 +1,11 @@
+//main
+#main{
+    position: relative;
+}
+
 //container
 .container__header{
+    position: absolute;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -9,18 +15,96 @@
 }
 .nav-header{
     position: fixed;
-    background: $color-secondary;
-    opacity: 0.9;
-    height: 5vh;
+    background:  $color-secondary;
+    opacity: 0.9!important;
+    height: 10vh;
     width: 100%;
     z-index: 5;
-    @include desktop{
+    .sf-menu a{
+        display: none;
+        .nav-toggle{
+          float: right;
+           
+        }
+       .SlideMenu{
+        width: 400px;
+        height: 700px;
+        position: absolute;
+        background-color: #222;
+        li{
+            display: block;
+        }
+       }
+
+    }
+     @include desktop{
+         opacity: 0.8;
         height: auto;
-        .sidebar{
-            background-color: $color-black-54;
+        height: 12vh;
+        width: 100%;
+        .sf-menu a{
+            display: inline;
+            font-size: $base-font-size*1.1;
+            color: $color-white;
+            right: $base-grid*2;
+            li{
+                padding: $base-grid;
+            }
+            .btn-close{
+                position: relative;
+                a{
+                    display: none!important;
+                }
+            }
+        }
+      
+        .nav-sidebar{
+            position: absolute;
+            background: $color-black;
+            z-index: 99;
+            right: 0;
+            padding-left: 300px;
+            align-content: right;
+            bottom: 0;
+            width: 250px;
+            height: 700px;
+            padding: 0 5px;
+            @include desktop{
+                display: none;
+            }
+
+        }
+
+        .site-logo {
             position: relative;
-            display: none;
-        
+            color: $color-white;
+            @include phone{
+            a{
+                text-align: center;
+                font-size: $base-font-size-lg;
+                color: $color-white;
+                z-index: 5;
+                font-weight: bold;
+                bottom: $base-grid;
+                left: $base-grid;
+                &:hover{
+                    color: $color-white!important;
+                }
+                a{
+                    color: $color-white;
+                    left: $base-grid;
+                }
+            }
+        }
+            @include desktop{
+              a{ font-size: $base-font-size*1.3;
+                float: left;
+                // margin-left: $base-grid;
+                // margin-top: $base-grid;
+               // margin-top: 0;
+               // margin-left: $base-grid;
+              }
+            }
           }
     }
     @include tablet{
@@ -32,36 +116,66 @@
         }
     }
 }
-
-.navbar{
+.btn-close{
+    font-size: 40px;
     position: relative;
-    margin: 0;
-    
-    
+    opacity: 0;
+
+    @include desktop{
+        display: none;
+    }
+   
 }
-
 //header
-.header_img{
-    position: relative;
+.img-head{
     width: 100%;
+    position: relative;
     background-position: center;
     background-size: cover;
-    height: auto;
-    top: 0;
-    
+    height: 10vh;
+    padding-top: 0;
+    z-index: 2;
+    top: 0;  
+    @include desktop{
+        height: auto;
+    }
+
+}
+.title{
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    left: 40%;
+    top: 40%;
+    font-size: $base-grid*1.5;
+    color: $color-primary;
+    @include desktop{
+        left: 45%;
+        font-size: $base-font-size-lg*1.5;
+    }
 }
 
+
 //ministry content
+.ministry-meta{
+    position: relative;
+}
 .ministry__content{
-    
+    position: relative;
     padding : 50px;
     margin: 0 auto;
-    font-size: $base-font-size*1.2;
+    font-size: $base-font-size-lg*1.9;
     width: 100%;
+    h2{
+        font-size: $base-font-size-lg*2;
+    }
     @include desktop{
-        width: 50%;
+        width: 60%;
         p{
-            //font-size: $base-font-size-lg;
+            font-size: $base-font-size-lg;
+        }
+        h2{
+            font-size: $base-font-size*2;
         }
     }
     .col-sm{
@@ -80,7 +194,7 @@
         text-align: center!important;
         @include desktop{
             margin: 0 auto;
-            font-size: $base-font-size*1.2;
+            font-size: $base-font-size*1.5;
             line-height: 1.5em;
             font-style: normal;
     }
@@ -89,33 +203,59 @@
 
 //activities
 .row__activities{
+    position: relative;
     margin: 0 auto;
     display: block;
+
 
 }
 
 //container gallery
 .container__gallery{
+    //position: absolute;
     margin: 0 auto;
-    padding: $base-grid*2;
+    padding: $base-grid;
     display: inline-block;
 
    
     h2{
         padding: $base-grid*1.2;
         text-align: center;
-        font-style: normal;
+        font-style: bold;
         font-weight: 350;
-        font-size: $base-font-size-lg;
+        font-size: $base-font-size-lg*2;
+        @include desktop{
+        h2{
+            font-size: $base-font-size;
+            text-align: center;
+            font-style: bold;
+            font-weight: 300;
+        }
+    }
+    }
+}
+.row__gallery{
+        h2{
+        text-align: center;
+        font-style: bold;
+        font-weight: 300;
+        font-size: $base-font-size-lg*2; 
+        @include desktop{
+            h2{
+                font-size: $base-font-size;
+                text-align: center;
+                font-style: bold;
+                font-weight: 300;
+            }
+        }
     }
     h3{
         padding: $base-grid*2;
         text-align: center;
         font-style: normal;
         font-weight: 300;
-        font-size: 50px;
+        font-size: $base-font-size-lg*2;
     }
-
 }
 .row__gallery{
     @include desktop{
@@ -123,81 +263,110 @@
         grid-template-columns: repeat(4,1fr);
         grid-gap: $base-grid;
        h3{
-            font-size: $base-font-size*1.2;
-            font-weight: 350;
+            font-size: $base-font-size-lg;
+            padding: $base-grid/2;
        }
 }
 }
 
 //join btn
 .join_btn{
-position: absolute;
+
 left: 50%!important;
-margin-left: -30px!important;
+right: 50%;
+transform: translate(50%, 50%);
+@include desktop{
+    left: 45%;
+    transform: translate(48%, 50%);
+}
 }
 
 .btn-primary__join{
-padding: $base-grid/3.5!important;
+padding: $base-grid/2!important;
 margin: 0 auto!important;
 color: $color-white!important;
 background: $color-primary!important;
 border: transparent!important;
+border-radius: 10px!important;
 }
 .btn-primary__join:hover{
     color: $color-secondary!important;
 }
 
 #footer{
+    
+    //height: 110vh;
     display: block;
-    padding: $base-grid*2;
+    padding: $base-grid;
     background-color: $color-black-87;
     ul{
         display: inline-block!important;
+        //font-size: $base-font-size-lg*1.6!important;
     }
     a{
         color: $color-white-54!important;
-        font-size: $base-font-size-lg;
+       // font-size: $base-font-size-lg*1.5;
         font-style: normal;
         padding: $base-grid/3;
          text-align: center!important;
-    }
-    .float_programes{
-        font-size: $base-font-size-lg*2;  
+         &:hover{
+             color: $color-primary;
+         }
     }
     h3{
        
         font-style: bold;
         font-weight: 300;
-        font-size: $base-font-size*1.2;
+       // font-size: $base-font-size*1.2;
         color: $color-primary;
         padding: $base-grid;
     }
     p{
         padding-top: $base-grid;
         color: $color-white-54!important;
-        font-size: $base-font-size*1.2;
+        //font-size: $base-font-size*1.2;
     }
     // .footer_container{
     //     text-align: center;
     // }
    .row__footer{
+       text-align: center;
+       a{
+        font-size: $base-font-size-lg*2;
+        padding: $base-grid/2;
+        text-align: center;
+    }
+    p{
+        font-size: $base-font-size-lg*2;
+        padding: $base-grid;
+    }
+    h3{
+        font-size: $base-font-size-lg*2;
+        padding: $base-grid;
+        text-align: center;
+    }
     @include desktop{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: $base-grid;
+        //height: 80vh;
+        width: 100%;
+        display: grid!important;
+        grid-template-columns: repeat(4,1fr)!important;
+        grid-gap: $base-grid!important;
         a{
-            font-size: $base-font-size;
+            font-size: $base-font-size*1.2;
             padding: $base-grid/8;
             text-align: center;
         }
         p{
-            font-size: $base-font-size;
+            font-size: $base-font-size*1.2;
             padding: $base-grid/8;
         }
         h3{
-            font-size: $base-font-size;
-            padding: $base-grid/8;
+            font-size: $base-font-size*1.3;
+            padding: $base-grid;
             text-align: center;
+        }
+        .float_programes{
+           // font-size: $base-font-size;
         }
     }
    }
@@ -210,8 +379,15 @@ border: transparent!important;
     padding: 0!important;
 }
 .fh5co-copyright{
+    p{
     text-align: center;
-    font-size: $base-font-size*1.2;
+    font-size: $base-font-size*1.3!important;
+    }
+    @include desktop{
+        p{
+            font-size: $base-font-size-lg;
+        }
+    }
 }
 
 
