@@ -35,7 +35,7 @@ body .navbar h1 a {
   text-decoration: none;
   padding: 15px;
   display: block;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -47,19 +47,116 @@ body .navbar h1 a {
     position: relative;
     z-index: 2;
     float: left;
-    margin-top: -7%;
+    margin-left: 5%;
+    margin-top: 1%;
+    color: #fff;
   }
 }
 
-.header h1 {
-  margin-top: 6%;
-  text-align: center;
-  display: block;
+@media (min-width: 600px) {
+  body .navbar h1 a {
+    margin-left: 0px;
+  }
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
 
 @media (min-width: 768px) {
-  .header h1 {
-    text-align: left;
+  .sidenav {
+    text-align: right;
+    position: absolute;
+    height: 8vh;
+    right: 0;
+    padding: 0;
+    background: #250d33;
+  }
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .sidenav a {
+    display: inline-block;
+    color: red;
+    padding: 0.75em 1em !important;
+    font-weight: normal;
+    border-left: none;
+    border-top: none;
+    border-top: none;
+    text-decoration: none;
+    zoom: 1;
+    font-size: 14px;
+    border-bottom: none !important;
+    margin-top: 1%;
+  }
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+  .sidenav .closebtn {
+    margin-left: 0px;
+    position: relative;
+  }
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  -webkit-transition: margin-right .5s;
+  transition: margin-right .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
   }
 }
 
@@ -83,7 +180,7 @@ body .navbar h1 a {
 .menu a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover {
-  color: #3498db;
+  color: #ef6249;
 }
 
 #chk {
@@ -97,14 +194,31 @@ body .navbar h1 a {
   float: right;
 }
 
+.menu-list {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .menu-list {
+    margin-right: 10%;
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 600px) {
+  .menu-list {
+    margin-right: 0px;
+  }
+}
+
 .menu {
   position: fixed;
-  width: 100%;
+  width: 60%;
   height: 100vh;
-  background: #333;
+  background: #111;
   right: -100%;
   top: 0;
-  text-align: center;
+  text-align: left;
   padding: 80px 0;
   line-height: normal;
   -webkit-transition: 0.7s;
@@ -115,9 +229,9 @@ body .navbar h1 a {
   .menu {
     text-align: right;
     position: absolute;
-    height: 8vh;
+    height: 10vh;
+    width: 100%;
     right: 0;
-    list-style: none;
     padding: 0;
     background: #250d33;
   }
@@ -125,23 +239,100 @@ body .navbar h1 a {
 
 .menu a {
   display: block;
-  padding: 20px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
   .menu a {
     display: inline-block;
-    color: rgba(255, 255, 255, 0.5);
     padding: 0.75em 1em !important;
     font-weight: normal;
     border-left: none;
     border-top: none;
-    border-top: none;
-    text-decoration: none;
     zoom: 1;
     font-size: 14px;
     border-bottom: none !important;
-    margin-top: 1%;
+  }
+}
+
+.dropdown-content {
+  list-style: none;
+  margin-left: 15%;
+}
+
+@media (min-width: 768px) {
+  .dropdown-content {
+    display: none;
+    margin-left: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+}
+
+/* Dropdown Button */
+@media (min-width: 768px) {
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+}
+
+/* The container <div> - needed to position the dropdown content */
+@media (min-width: 768px) {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  list-style: none;
+  margin-left: 15%;
+}
+
+@media (min-width: 768px) {
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 2;
+  }
+}
+
+/* Links inside the dropdown */
+@media (min-width: 768px) {
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+/* Change color of dropdown links on hover */
+@media (min-width: 768px) {
+  .dropdown-content a:hover {
+    background-color: #fff;
+  }
+}
+
+/* Show the dropdown menu on hover */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 
@@ -178,6 +369,7 @@ body .navbar h1 a {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     margin-top: 8%;
+    z-index: -1;
   }
 }
 
@@ -196,7 +388,6 @@ body .navbar h1 a {
   width: 100%;
   background-attachment: fixed;
   overflow: hidden;
-  z-index: 3;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -205,6 +396,26 @@ body .navbar h1 a {
   .about-img img {
     width: 100%;
     height: 100%;
+  }
+}
+
+.abt__subsect div {
+  border-bottom: #333 solid 3px;
+}
+
+@media (min-width: 768px) {
+  .abt__subsect div {
+    border-bottom: 0px;
+  }
+}
+
+.abt__subsect2 div {
+  border-bottom: #333 solid 3px;
+}
+
+@media (min-width: 768px) {
+  .abt__subsect2 div {
+    border-bottom: 0px;
   }
 }
 
@@ -290,7 +501,7 @@ bg-img {
 .team div {
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 0 0px 30px;
+  margin: 0 20px 30px;
 }
 
 @media (min-width: 768px) {
@@ -302,6 +513,7 @@ bg-img {
 .team div img {
   height: 30vh;
   width: 100%;
+  margin: 0 0 5%;
 }
 
 @media (min-width: 768px) {
@@ -315,8 +527,77 @@ bg-img {
   text-align: center;
 }
 
-.main_content h3 {
+#content-info h2 {
   text-align: center;
   margin: 10% 0 10%;
+}
+
+.main_content h3 {
+  text-align: center;
+  margin: 5% 0 5%;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.87);
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+.footer h3 {
+  color: #ef6249;
+  text-align: center;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.54) !important;
+  text-align: center;
+}
+
+.church_acts {
+  margin-top: 40px;
+}
+
+.joinbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+.joinbtn button {
+  color: #fff;
+  font-size: 18px;
+  background-color: #ef6249;
+  border-radius: 12%;
+  height: 6vh;
+  width: 100px;
+}
+
+.reserve {
+  background-color: rgba(0, 0, 0, 0.87);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reserve p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.54) !important;
 }
 /*# sourceMappingURL=aboutus.css.map */

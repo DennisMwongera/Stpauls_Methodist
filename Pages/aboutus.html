@@ -16,21 +16,66 @@
                    <header>
            <div class="navbar">  
                <input type="checkbox" id = "chk">
-            <label for="chk" class = "show-menu-btn">
+            <label for="chk" class = "show-menu-btn" onclick="openNav()">
                 <i class = "fas fa-bars"></i>
             </label>
+            
             <h1 ><a href="../glow/index.php">ST.Paul's</a></h1>
                   
-               <ul class="menu">
-                    <a href="../Home/home.php"><li>Home</li></a>
-                    <a href="../sermons.php"><li>Sermons</li></a>
-                     <a href="../blog/blogpage.php"><li>Blog</li></a>
-                     <a href="../ministries.php"><li>Ministries</li></a>
-                     <a href="aboutus.html"><li>About US</li></a>
-                     <label for="chk" class = "hide-menu-btn">
+            <div class = menu >   
+            <ul class="menu-list">
+                    <label for="chk" class = "hide-menu-btn">
                             <i class = "fas fa-times"></i>
                         </label>
+                    <a href="../Home/home.php"><li>Home</li></a>
+                     <div class="dropdown">
+                        <a class="dropbtn">Ministries <i class="fas fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href=""> Men</a>
+                            <a href="">Women </a>
+                            <a href="">Youth </a>
+                            <a href="">Children </a>
+                            <a href="">Golden Age </a>
+                            <a href="">Choir </a>
+                        </div>
+                        
+                      </div>
+                      <a href="../sermons.php"><li>Sermons</li></a>
+                      <a href="../blog/blogpage.php"><li>Blog</li></a>
+                     <!-- <a href="../blog/ministries.php" class="dropdown"><li>Ministries <i class="fas fa-angle-down"></i></li></a>
+                     <div class = "dropdown-content">
+                        <a href=""> Men</a>
+                        <a href="">Women </a>
+                        <a href=""><li>Youth </li></a>
+                        <a href=""><li>Children </li></a>
+                        <a href=""><li>Choir </li></a>
+                     </div> -->
+                     <a href="aboutus.html"><li>About Us</li></a>
+                     <a href="aboutus.html"><li>Contact Us</li></a>
+                     
                </ul>
+            </div>
+                  <!-- Use any element to open the sidenav -->
+                  <!-- <span onclick="openNav()"></span> -->
+
+                  
+               <!-- <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="menu">
+                            <a href="../Home/home.php">Home</a>
+                            <a href="../sermons.php">Sermons</a>
+                             <a href="../blog/blogpage.php">Blog</a>
+                             <a href="../ministries.php">Ministries</a>
+                             <a href="aboutus.html">About US</a>
+                             <label for="chk" class = "hide-menu-btn">
+                                    <i class = "fas fa-times"></i>
+                                </label>
+                            </div> 
+                  </div> -->
+                  
+                  
+                  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                  
            </div>
             <!-- <div class="header">
                  <h1>About Us</h1>
@@ -44,7 +89,7 @@
         <!---------------------header------------------>
             
           <!---------------------content------------------>
-          <div class="main_content">
+          <div class="main_content" id="main">
             <section id="content">
                 <div class="content__sect">
                     <div class="content__subsect">
@@ -131,32 +176,72 @@
         <!-------------------pastors------------------------>
             
             <section id="content-info">
-                <h3>Our Pastors</h3>
+                <h2>Our Pastors</h2>
                 <div class="team">
+                    <div class="pastor2">
+                     <img src="IMG_1356.JPG" alt="">
+                          <h5>Superintendent: David Muthuiya</h5>
+                 </div>
+                 <div class="pastor4">
+                   <img src="IMG_1347.JPG" alt="">
+                       <h5>Chair: Kanana Nyaga</h5>
+              </div>
                     <div class="pastor1">
                         <img src="IMG_1350.JPG" alt="">
-                        <h5>Pastor Muthuiya</h5>
-                    </div>
-                       <div class="pastor2">
-                        <img src="IMG_1356.JPG" alt="">
-                             <h5>Pastor Grace</h5>
+                        <h5>Vice Chair: Mwiti Mugambi</h5>
                     </div>
                        <div class="pastor3">
                          <img src="IMG_1391.JPG" alt="">
-                             <h5>Pastor Mtunji</h5>
-                    </div>
-                       <div class="pastor4">
-                         <img src="IMG_1347.JPG" alt="">
-                             <h5>Pastor Evelyn</h5>
+                             <h5>Treasurer: Bundi Marete</h5>
                     </div>
                        <div class="pastor5">
                          <img src="IMG_1393.JPG" alt=""2>
-                             <h5>Pastor Muthuiya</h5>
+                             <h5><span>Treasurer:</span> Nelson Kirema</h5>
                     </div>
                 </div>
+                
             </section>
      <!-------------------pastors------------------------>   
     </div>    
+    <!-- <div class="joinbtn">
+        <button>Join Us</button>
+    </div> -->
+    <div class="footer">
+            <div class="directions">
+                <h3>Mck St Pauls Church</h3>
+                <p>Meru - Nanyuki Highway</p>
+                <p>Library Road</p>
+                <p>Meru County Offices</p>
+            </div>
+            <div class="church_acts">
+                    <p>HIV/AIDS Support Group</p>
+                    <p>Christian Social Responsibility</p>
+                    <p>Mission and Evangilism</p>
+                    <p>Bible Study</p>
+                    <p>Social Day</p>
+            </div>
+            <div class="f_ministry">
+                <h3>Our Ministries</h3>
+                    <p>Men Fellowship</p>
+                    <p>Women Fellowship</p>
+                    <p>Youth Ministry</p>
+                    <p>Children Ministry</p>
+                    <p>Choir</p>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <p>Facebook</p>
+                <p>Google Plus</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+            
+            
+        </div>
+        <div class="reserve">
+                <p>@2019. All Right Reserved.   Designed By Techtailors</p>
+            </div>
         </wrapper>
     </body>
+    <script src="../sass/sass_files/css/see.js"> </script>
 </html>
