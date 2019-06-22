@@ -5,18 +5,6 @@
 
 //navbar
 .nav{
-  display: inline;
-  @include desktop{
-    .side-bar{
-      background-color: $color-black-54;
-      position: relative;
-      display: none;
-  
-    }
-  }
-  ul{
-    float: right;
-  }
   li{
     font-family: $base-font-family;
     display: none;
@@ -25,6 +13,10 @@
   }
   a{
     color: $color-white;
+    font-size: 50px;
+  }
+  h1{
+    padding: $base-grid;
   }
  }
 .navbar-nav{
@@ -63,6 +55,11 @@
       @include hover{
         color: $color-white;
       }
+      img{
+        padding: $base-grid;
+        margin-left: $base-grid;
+        margin-right: $base-grid;
+      }
     }
   }
   a{
@@ -76,50 +73,71 @@
   }
   }
 
-//navbrand
-  .d-inline-block{
-    margin: 0 auto;
-    a{
-    color: $color-white;
-    padding: $base-grid;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-area: "img span"
-    }
-    img{
-      grid-area: img;
+//nav-sidebar
+.nav-sidebar{
+  position: absolute;
+  z-index: 99;
+  background: $color-black;
+  float: right;
+  clear: right;
+  right: -70%;
+  margin-top: 0;
+  transform: translateY(-1%);
+  
+  ul{
+    display: block;
+    li{
       padding: $base-grid;
-    }
-    span{
-      grid-area: span;
+      a{
+        font-size: $base-font-size-lg*2;
+      }
     }
   }
-  //navbar-toggle
-  // .navbar-toggler{
-  //   margin-left: 300px!important;
-  //   color: $color-primary!important;
-  //   border-color: $color-white!important;
-  //   border-bottom: $color-white!important;
-
-  // }
-  .navbar-toggler {
+  @include desktop{
+    opacity: 0;
+    left: 100%;
+  }
+}
+  
+  .site-logo{
+    a{
+      font-size: $base-font-size-lg*2;
+      text-align: center;
+      padding: $base-grid;
+    }
+    @include desktop{
+      h1{
+        font-weight: 300;
+      }
+      a{
+        font-size: $base-font-size-lg;
+        float: left;
+        font-size: $base-font-size-lg;
+      }
+    }
+  }
+  .nav-toggle{
     color: $color-white;
+    font-size: 72px;
     border-color: $color-white;
-    height: $base-grid*2.1;
-    width: $base-grid*2.1;
+    height: $base-grid*3;
+    width: $base-grid*3;
     position: relative;
-    z-index: 3;
+    z-index: 999;
     float: right;
+    margin-top: $base-grid*1.5;
     margin-right: $base-grid;
     bottom: $base-grid;
-    background-color: aqua;
+    transition: 0.2s;
+    cursor: pointer;
+    a{
+      font-size: $base-font-size-lg;
+    }
 
     
     @include desktop{
       display: none;
     }
   }
-  .navbar-toggler-icon{
 
-  }
 

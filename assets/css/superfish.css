@@ -3,23 +3,20 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
 }
 .sf-menu li {
 	position: relative;
-	margin-right: 24px;
-	font-size: 18px!important;
 }
 .sf-menu ul {
 	position: absolute;
-/*	display: none;*/
+	display: none;
 	top: 100%;
 	right: 0;
 	
-	z-index: 999;
+	z-index: 99;
 }
 .sf-menu > li {
-/*	float: left;*/
+	float: left;
 }
 .sf-menu li:hover > ul,
 .sf-menu li.sfHover > ul {
@@ -47,32 +44,34 @@
 	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
 }
 .sf-menu a {
-	border-left: 1px solid #fff;
+	/* border-left: 1px solid #fff;
 	border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
-	border-top: 1px solid rgba(255,255,255,.5);
+	/* border-top: 1px solid rgba(255,255,255,.5); */ 
 	padding: .75em 1em;
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
 .sf-menu a {
-	color: white;
+	color: #13a;
 }
 .sf-menu li {
-	background: #BDD2FF;
+	/* background: #BDD2FF; */
 	white-space: nowrap; /* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
 	-webkit-transition: background .2s;
 	transition: background .2s;
 }
 .sf-menu ul li {
-	background: #AABDE6;
+	margin-left: 15px;
+	font-size: 16px!important;
+	/* background: #AABDE6; */
 }
 .sf-menu ul ul li {
-	background: #9AAEDB;
+	/* background: #9AAEDB; */
 }
 .sf-menu li:hover,
 .sf-menu li.sfHover {
-	background: #CFDEFF;
+	color: #fff;
 	/* only transition out, not in */
 	-webkit-transition: none;
 	transition: none;

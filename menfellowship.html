@@ -39,10 +39,11 @@
 								<div class="container__head">
 									<div class="nav-header">
 										<a href="#" class="nav-toggle" onclick="openSlideMenu()"><i class="fas fa-align-justify"></i></a>
-										<div class="site-logo"><a href="index.html">ST.PAULS</a></div>				<!-- START #fh5co-menu-wrap -->
+										<div class="site-logo"><h1><a href="index.html">ST.Paul's</a></h1></div>
+										<!-- START #fh5co-menu-wrap -->
 										<nav id="fh5co-menu-wrap" role="navigation">
-												<!-- <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a> -->
-											<ul class="sf-menu " id="fh5co-primary-menu">
+												<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+											<ul class="sf-menu SlideMenu" id="fh5co-primary-menu">
 												<li class="active">
 													<a href="index.html">Home</a>
 												</li>
@@ -67,22 +68,6 @@
 									</div>
 								</div>
 							</header>
-							<div class="nav-sidebar SlideMenu" id="nav-side">
-								<ul>
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Ministries</a>
-									<ul>
-										<li><a href="#">Men Fellowship</a></li>
-										<li><a href="#">Women Fellowship</a></li>
-										<li><a href="#">Youth Group</a></li>
-										<li><a href="#">Junior Church Ministry</a></li>
-									</ul>
-									</li>
-									<li><a href="#">Sermon</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
 						<!-- END nav -->
 					</div>
 				</div>
@@ -92,8 +77,8 @@
  <div id="col-xs-12">
 			<div class="img-head">
 					
-				<img src="assets/images/jcm.jpg" style="width: 100%;">
-				<h1 class="title">Ministry</h1>
+				<img src="assets/images/men fellowship.jpg" fellowship.jpg" style="width: 100%;">
+				<!-- <h1 class="title"> MEN FELLOWSHIP</h1> -->
 			</div>
 		</div> 
 	
@@ -101,14 +86,16 @@
 	<div class="row-ministry">
 		<div class="ministry-meta">
 			<div class="ministry__content">
-          <h2>Ministry</h2>
+          <h2><b>MEN FELLOWSHIP</b></h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					The St. Paul's Men fellowship is one of the most active fellowships in the church. 
+					Since it's establishment, the St. Paul's MMF has been taking part in activities around the methodist community 
+					They perform in annual rallies over the years, and they have been fantastic taking the top 3 positions. 
+					The MMF has played a major role in the St. Pauls projects as heads of the house men usually take up challenges functions and expeditions 
+					to ensure that they take place and things work
+			 		Men believe that as heads of families as the Holy Bible clearly stipulates, 
+					 they have a duty to guide the church family and spearhead development and spiritual agenda of the congregation. 
+					 They have taken their roles with dedication and zeal
 				</p>
 			</div>
 		</div>
@@ -146,23 +133,23 @@
 </div>
 <!--------START Gallery-->
 <div class="container_section container__gallery">
-		<h3>Gallery</h3>
+		<h2>Gallery</h2>
 	<div class="row_section row__gallery">
 	  <div class="col-sm">
-		<img src="assets/images/img 2.jpg"  onClick="openModal();cureentSlide(1)" class="img-fluid img-thumbnail" alt="Responsive image">
-		<h3>Outing</h3>
+		<a href="http://localhost/stpaul_blog/men-fellowship/"><img src="assets/images/men-fellowship/image-1.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+		<h3>Visited the Tanzania Church</h3></a>
 	  </div>
 	  <div class="col-sm">
-		<img src="assets/images/img 2.jpg" onClick="openModal();cureentSlide(2)" class="img-fluid img-thumbnail" alt="Responsive image">
-		<h3>Outing</h3>
+		<a href="http://localhost/stpaul_blog/men-fellowship/"><img src="assets/images/men-fellowship/image-2.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+		<h3>Tanzania Men Rally</h3></a>
 	  </div>
 	  <div class="col-sm">
-		<a href="http://localhost/stpaul_blog/men-fellowship/"><img src="assets/images/img 2.jpg" class="img-fluid img-thumbnail" alt="Responsive image"></a>
-		<h3>Outing</h3>
+		<a href="http://localhost/stpaul_blog/men-fellowship/"><img src="assets/images/men-fellowship/image-3.jpg"class="img-fluid img-thumbnail" alt="Responsive image">
+		<h3>Outing</h3></a>
 	  </div>
 	  <div class="col-sm">
-		<img src="assets/images/img 4.jpg" onClick="openModal();cureentSlide(4)" class="img-fluid img-thumbnail" alt="Responsive image">
-		<h3>Outing</h3>
+		<a href="http://localhost/stpaul_blog/men-fellowship/"><img src="assets/images/men-fellowship/image-4.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+		<h3>Outing</h3></a>
 	  </div>
 	</div>
 	</div>
@@ -260,7 +247,8 @@
 					</div>
 				</div>
 				<div class="fh5co-copyright text-center">
-					<p>&copy; 2019. All Rights Reserved.Designed with <i class="icon-gear"></i> by <a href="#" target="_blank">Techtailors</a>
+					<p>&copy; 2019. All Rights Reserved. <span>Designed with <i class="icon-gear"></i> by <a href="#" target="_blank">Techtailors</a>
+                        </span>
                     </p>	
 				</div>
 			</div>
@@ -269,11 +257,10 @@
 <!-- jQuery -->
   <script>
 	function openSlideMenu(){
-			document.getElementsByClassName("ministry__content").style.opacity = "0.4";
-			//document.getElementsByClassName("nav-sidebar").style.color = "#222";
+			document.getElementById("fh5co-primary-menu").style.marginRight = "350px";
+			document.getElementById("fh5co-primary-menu").style.color = "#222";
             //document.getElementByClassName("side-bar").style.opacity =("0");
-            document.getElementById("main").style.marginRight = "300px";
-			document.getElementById("nav-side").style.marginRight = "200px";
+            document.getElementById("main").style.marginRight = "200px";
 			//document.getElementById("side-menu").style.height = "100%";
 
 			document.getElementById("fh5co-menu-wrap").style.background= '#000';

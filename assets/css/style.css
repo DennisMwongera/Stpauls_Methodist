@@ -24,30 +24,30 @@ body.fh5co-offcanvas {
   overflow: hidden;
 }
 
-a {
+/* a {
   color: #ef6249;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-}
+} */
 a:hover {
   text-decoration: none !important;
   color: #ef6249 !important;
 }
 
-p, ul, ol {
+/* p, ul, ol {
   margin-bottom: 1.5em;
-  /* font-size: 16px; */
+  font-size: 16px;
   color: #000;
   font-family: "Open Sans", Arial, sans-serif;
-}
+} */
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   color: #5a5a5a;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
-  /* margin: 0 0 30px 0; */
-}
+  margin: 0 0 30px 0;
+} */
 
 figure {
   margin-bottom: 2em;
@@ -77,7 +77,7 @@ figure {
 .fh5co-cover,
 .fh5co-hero {
   position: relative;
-  height: 800px;
+  height: 300px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover,
@@ -98,7 +98,7 @@ figure {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: rgba(4, 17, 0, 0.90);
+  /* background: rgba(4, 17, 0, 0.90); */
 }
 
 .fh5co-overlay {
@@ -218,11 +218,6 @@ background-repeat: no-repeat;
 .sf-menu {
   float: right;
 }
-@media (max-width: 480px){
-    .sf-menu{
-        display: none;
-    }
-}
 
 .sf-menu ul {
   box-shadow: none;
@@ -232,7 +227,7 @@ background-repeat: no-repeat;
 }
 
 .sf-menu a {
-    color: white;
+    color: #ef6249;
 /*  color: rgba(255, 255, 255, 0.5);*/
   padding: 0.75em 1em !important;
   font-weight: normal;
@@ -327,7 +322,7 @@ background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 background: #250d33;
     opacity: 0.9;
     position: fixed;
@@ -340,40 +335,38 @@ background: #250d33;
   
 }
 
- .site-logo {
-  position: absolute;
-  z-index: 5;
+#fh5co-logo {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
   text-transform: uppercase;
-  text-align: center;
-   margin-top: 35px; 
-   font-weight: 700;
-  text-align: center;
-  margin-left: 35px; 
- 
+  margin-top: 35px;
+  font-weight: 700;
+  float: left;
 }
-.site-logo span {
+#fh5co-logo span {
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  .site-logo {
+  #fh5co-logo {
     width: 100%;
     float: none;
     text-align: center;
   }
 }
-.site-logo a {
+#fh5co-logo a {
   color: #fff;
 }
-.site-logo a:hover, #fh5co-logo a:focus {
+#fh5co-logo a:hover, #fh5co-logo a:focus {
   color: #fff !important;
 }
 
 #fh5co-menu-wrap {
   position: relative;
   z-index: 2;
-  display: inline!important;
-  /* float: right;
-  margin-top: 15px; */
+  display: block;
+  float: right;
+  margin-top: 15px;
 }
 #fh5co-menu-wrap .sf-menu a {
   padding: 1em .75em;
@@ -421,7 +414,7 @@ background: #250d33;
   float: right;
   margin-right: 10px;
   top: 20px;
-  font-size: 18px!important;
+  font-size: 16px;
   content: "\e924";
 /*  color: rgba(0, 0, 0, 0.5);*/
     color:red;
@@ -477,21 +470,6 @@ background: #250d33;
   right: 100%;
   border: none !important;
 }
-#side-menu{
-    position: absolute;
-    max-height: 100vh;
-    z-index: 999;
-    right: 0;
-}s
-.navbar-nav ul{
-    display: block;
-    
-}
-.navbar-nav a{
-    color: red!important;
-    position: relative;
-    z-index: 99999;
-}
 
 .site-header.has-image #primary-menu .sub-menu {
   border-color: #ebebeb;
@@ -518,7 +496,7 @@ background: #250d33;
   color: #ef6249 !important;
 }
 .mega_menu{
-    width: 850px;
+    width: 750px;
     height: 250px;
 }
 
@@ -1058,14 +1036,14 @@ background: #250d33;
   float: left;
   margin-left: 22px;
 }
-.testimony figure img {
+/* .testimony figure img {
   width: 50px;
   height: 50px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-}
+} */
 .testimony blockquote {
   border-left: none;
   padding: 40px;
@@ -1110,7 +1088,7 @@ background: #250d33;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-blog {
+  .img-head{
     width: 100%;
   }
 }
@@ -1197,49 +1175,43 @@ background: #250d33;
   color: #5a5a5a;
 }
 
-#footer {
-  text-align: center!important;
+/* #footer {
   background: #2F3032;
-/*  padding: 6em 0 0 0;*/
+  padding: 6em 0 0 0;
   width: 100%;
   float: left;
 }
-/*
 @media screen and (max-width: 768px) {
   #footer {
     padding: 3em 0;
-      display: grid!important;
-      grid-template-columns: auto auto;
   }
 }
-/* */
 #footer h2, #footer h3, #footer h4 {
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
-} */
-/* #footer h3 {
-font-size: 24px;
-} */
+}
+#footer h3 {
+  font-size: 16px;
+}
 #footer [class*="col"] {
   padding-bottom: 30px;
 }
 #footer .btn {
   color: #fff;
 }
-/* #footer .float {
+#footer .float {
   float: left;
   margin-right: 10%;
-} */
+}
 #footer ul {
-  text-align: center;
   padding: 0;
   margin: 0;
 }
-/* #footer ul li {
+#footer ul li {
   padding: 0;
   margin: 0 0 10px 0;
   list-style: none;
-} */
+}
 #footer ul li a {
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none !important;
@@ -1251,11 +1223,11 @@ font-size: 24px;
   display: block !important;
 }
 #footer .fh5co-social li a {
-  /* font-size: 16px; */
+  font-size: 16px;
 }
 #footer .fh5co-social li i {
   float: left;
-/*  font-size: $base-font-size-lg;*/
+  font-size: 20px;
   width: 40px;
 }
 #footer .fh5co-copyright {
@@ -1265,30 +1237,27 @@ font-size: 24px;
   width: 100%;
   float: left;
 }
-/*
 #footer .fh5co-copyright span {
   display: block;
 }
-*/
 #footer .fh5co-copyright span a {
   color: rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 480px) {
   #footer .fh5co-copyright {
-    /* text-align: center!important; */
-/*      font-size: $base-font-size*1.2!important;*/
+    text-align: left !important;
   }
   #footer .fh5co-copyright span {
-/*    display: inline;*/
+    display: inline;
   }
-}
+} */
 
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Open Sans", Arial, sans-serif;
-/*  font-size: 16px !important;*/
-/*  font-weight: 400;*/
+  font-size: 16px !important;
+  font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -1616,7 +1585,7 @@ font-size: 24px;
   z-index: 9999;
   display: block;
   margin: 0 auto;
-/*  display: none;*/
+  display: none;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -1715,92 +1684,6 @@ font-size: 24px;
   height: 100%;
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: grey;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color:red;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 50px;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
